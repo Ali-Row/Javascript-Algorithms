@@ -20,5 +20,18 @@ arrToString(['Hello', 'World!']);
 
 // This function will count the number of vowels in a string
 let countVowels = (str) => {
-    let vowels;
+    str = str.toLowerCase();
+    let res = 0;
+    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    
+    for(letter of str) {
+        for(vowel of vowels) {
+            if(letter === vowel) {
+                res++;
+            }
+        }
+    } 
+    console.log('countVowels function output:', 'There are', res, 'vowels');
 }
+// Calling the countVowels function and passing in a string
+countVowels('Lets check those vowels then, that would be a nice idea!')
