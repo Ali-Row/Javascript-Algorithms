@@ -34,4 +34,15 @@ let countVowels = (str) => {
     console.log('countVowels function output:', 'There are', res, 'vowels');
 }
 // Calling the countVowels function and passing in a string
-countVowels('Lets check those vowels then, that would be a nice idea!')
+countVowels('Lets check those vowels then, that would be a nice idea!');
+
+let removeIndex = (arr, index) => {
+    for(let i = 0; i < arr.length; i++) {
+        if(i === index) {
+            arr.pop();
+        }
+    }
+    console.log(arr);
+}
+
+removeIndex(['I want to remove', 'this index', 'this function will do that', 'as expected'], 0);
