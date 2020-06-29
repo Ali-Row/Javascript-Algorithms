@@ -50,7 +50,7 @@ removeIndex(['I want to remove', 'this index', 'this function will do that', 'as
 
 // This function will change the first letter of each word in the string to a capital letter
 const capitalizeFirst = (str) => {
-    let result = str.split(' ').map(str => (str[0] || ' ').toUpperCase() + str.slice(1)).join(' ').trim();
+    const result = str.split(' ').map(str => (str[0] || ' ').toUpperCase() + str.slice(1)).join(' ').trim();
     console.log(result);
 }
 // Calling the capitalizeFirst function and passing in a string of 2 words
