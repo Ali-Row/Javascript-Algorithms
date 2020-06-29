@@ -46,3 +46,12 @@ const removeIndex = (arr, index) => {
 }
 // Calling the removeIndex function and passing in an array of strings and the index we want to remove
 removeIndex(['I want to remove', 'this index', 'this function will do that', 'as expected'], 1);
+
+
+// This function will change the first letter of each word in the string to a capital letter
+const capitalizeFirst = (str) => {
+    let result = str.split(' ').map(str => (str[0] || ' ').toUpperCase() + str.slice(1)).join(' ').trim();
+    console.log(result);
+}
+// Calling the capitalizeFirst function and passing in a string of 2 words
+capitalizeFirst('los angeles');
