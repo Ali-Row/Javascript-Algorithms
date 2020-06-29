@@ -1,7 +1,7 @@
 // These functions below will utilize the newer ES6 syntax and methods!
 
 // This function sorts an array of numbers from lowest to highest
-let sortArr = (arr) => {
+const sortArr = (arr) => {
     arr.sort((a, b) => a-b);
     console.log('sortArr function output:', arr);
 }
@@ -10,7 +10,7 @@ sortArr([1, 55, 3000, 22, 5, 34, 56, 1000, 343]);
 
 
 // This function converts an array of strings into a single string
-let arrToString = (arr) => {
+const arrToString = (arr) => {
     str = arr.join(' ');
     console.log('arrToString function output:', str);
 }
@@ -19,10 +19,10 @@ arrToString(['Hello', 'World!']);
 
 
 // This function will count the number of vowels in a string
-let countVowels = (str) => {
+const countVowels = (str) => {
     str = str.toLowerCase();
     let res = 0;
-    let vowels = ['a', 'e', 'i', 'o', 'u'];
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
     
     for(letter of str) {
         for(vowel of vowels) {
@@ -36,13 +36,13 @@ let countVowels = (str) => {
 // Calling the countVowels function and passing in a string
 countVowels('Lets check those vowels then, that would be a nice idea!');
 
-let removeIndex = (arr, index) => {
-    for(let i = 0; i < arr.length; i++) {
-        if(i === index) {
-            arr.pop();
-        }
-    }
-    console.log(arr);
-}
 
-removeIndex(['I want to remove', 'this index', 'this function will do that', 'as expected'], 0);
+// This function will remove a specific index from an array
+const removeIndex = (arr, index) => {
+    if (index > -1) {
+        arr.splice(index, 1);
+    }
+    console.log('removeIndex function output:', arr);
+}
+// Calling the removeIndex function and passing in an array of strings and the index we want to remove
+removeIndex(['I want to remove', 'this index', 'this function will do that', 'as expected'], 1);
