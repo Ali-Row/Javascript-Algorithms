@@ -66,4 +66,15 @@ const search = (arr, find) => {
     }
 }
 // Calling the search function and passing in an array and a string that finds whats in the array
-search(['Car', 'Cat', 'Capital', 'House', 'Tree', 'Shoes', 'Clothes'], 'C')
+search(['Car', 'Cat', 'Capital', 'House', 'Tree', 'Shoes', 'Clothes'], 'C');
+
+// This function will output an array of multiples based on a number you pass in and the length you'd like
+const arrOfMulitples = (num, len) => {
+    let arr = [];
+    for (let i = 1; i <= len; i++) {
+        arr.push(num*i);  
+    }
+    console.log('arrOfMultiples output:', arr);
+}
+// Calling the arrOfMutiples function and passing in a number to start with and another one for the length of the array
+arrOfMulitples(6, 10);
