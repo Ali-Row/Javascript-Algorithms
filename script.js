@@ -78,3 +78,9 @@ const arrOfMulitples = (num, len) => {
 }
 // Calling the arrOfMutiples function and passing in a number to start with and another one for the length of the array
 arrOfMulitples(6, 10);
+
+let nums = [10, 10, 25]
+const sum = (x, y, z) => {
+    console.log(x + y + z);
+}
+sum(...nums);
